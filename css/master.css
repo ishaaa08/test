@@ -1,0 +1,230 @@
+body {
+  background-color: #f9f9f9;
+  font-family: 'Open Sans';
+}
+
+.container-fluid{
+  height:900px;
+}
+/* e6deed */
+.rectangle {
+  width: 600px;
+  height: 850px;
+  background: #8010cc;
+  background: linear-gradient(#c200dd, #8b00ff);
+  border-bottom-right-radius: 360px;
+  border-bottom-left-radius: 330px;
+  position: relative;
+  right: 100px;
+}
+
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 350px;
+  height: 630px;
+  margin: auto;
+  border: 8px #fff solid;
+  left: 390px;
+  top: 180px;
+  border-radius: 40px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 190px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 10px;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 334px;
+  height: 610px;
+  border-radius: 70px;
+  background: #EEEEEE;
+}
+
+.name-head {
+  padding: 5% 0;
+  background: rgb(154, 25, 221);
+  background: linear-gradient(90deg, rgba(154, 25, 221, 1) 0%, rgba(200, 10, 227, 1) 100%);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  color: #fff;
+}
+
+.name {
+  font-size: 1.5rem;
+  margin: 5% 0 0;
+}
+
+.bio {
+  margin: 2%;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.profile-pic {
+  width: 20%;
+  margin: 5%;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  float: left;
+}
+
+.messages {
+  background-color: #EEEEEE;
+  margin: 5% 2%;
+  font-size: 0.7rem;
+}
+
+.m-text, .s-text, .row {
+  border-radius: 10px;
+  margin: 2% 40% 2% 2%;
+  background-color: #f0dff2;
+  padding: 2%;
+  line-height: 1.5;
+}
+
+.dog-image {
+  position: relative;
+  padding: 0 1%;
+  width: 25%;
+  border-radius: 25%;
+  left: 20%;
+}
+
+.s-text {
+  position: relative;
+  left: 35%;
+  background-color: #fff;
+}
+
+.row {
+  color: #fff;
+  background: rgb(194, 0, 221);
+  background: linear-gradient(90deg, rgba(194, 0, 221, 1) 0%, rgba(139, 0, 255, 1) 100%);
+}
+
+.icon {
+  color: #EEEEEE;
+  padding: 5% 0 2% 5%;
+}
+
+.price-t {
+  color: #EEEEEE;
+  margin: 0;
+  padding: 2% 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.price-p {
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.send-text {
+
+  width: 320px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #fff;
+
+
+
+}
+.send-te{
+  font-size:1rem;
+  font-weight: 400;
+  color: #a4a4a4;
+  text-align: left;
+  position: relative;
+
+  padding: 2% 5%;
+}
+.arrow {
+  color: #0E185F;
+  position: relative;
+  left: 87%;
+  bottom:50px;
+  /* padding:1% 0; */
+}
+.cont{
+  position:absolute;
+  top:400px;
+  left:900px;
+  width:26%;
+
+
+
+}
+
+.cont-head{
+  color:#231955;
+  font-size:3rem;
+  font-weight:bold;
+}
+
+
+.ptext{
+  padding-top:10px;
+  color: #a4a4a4;
+  font-size:18px;
+  font-weight:400;
+  line-height: 1.5;
+  text-align:left;
+}
+
+
+.rectangle-d {
+  width: 600px;
+  height: 850px;
+  background-color: #faf2ff;
+  border-radius: 2px;
+  border-top-left-radius: 330px;
+  position: relative;
+  left: 1320px;
+  bottom:740px;
+  z-index: -1;
+}
+
+@media(max-width:375px){
+  .rectangle{
+    right:300px;
+
+  }
+  .rectangle-d {
+    left:400px;
+    bottom:200px;
+  }
+  .smartphone{
+
+    height: 700px;
+  }
+  .smartphone .content{
+    height:680px;
+    border-radius:40px;
+  }
+  .m-text, .s-text, .row {
+    font-size: 13px;
+  }
+  .cont{
+    position: absolute;
+    left:200px;
+    top:950px;
+  }
+  .ptext{
+    text-align:center;
+    margin:0;
+  }
+}
